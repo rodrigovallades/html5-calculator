@@ -1,0 +1,147 @@
+h1, h2 {
+  text-align: center;
+}
+
+.calculator {
+  width: 257px;
+  height: 433px;
+  background: transparent url("../../assets/images/bg_calc.jpg") no-repeat 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.calculator__buttons {
+  width: 230px;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+.calculator__button {
+  border: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  float: left;
+  width: 43px;
+  height: 37px;
+  color: #d0d0da;
+  font-size: 1.35em;
+  line-height: 37px;
+  margin-left: 2px;
+  margin-right: 1px;
+  margin-bottom: 5px;
+  background: transparent url("../../assets/images/ui_calc_sprite.png") no-repeat 0 -100px;
+}
+
+/* CSS3 Casio button */
+.calculator__button1 {
+  outline: none;
+  cursor: pointer;
+  float: left;
+  width: 41px;
+  height: 36px;
+  border: 2px solid #1f1e21;
+  background: #333338; /* Old browsers */
+  background: -moz-linear-gradient(top, #333338 0%, #333338 59%, #494a4e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #333338 0%, #333338 59%, #494a4e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #333338 0%, #333338 59%, #494a4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#333338", endColorstr="#494A4E", GradientType=0); /* IE6-9 */
+  color: #d0d0da;
+  font-size: 1em;
+  line-height: 1.6em;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 5px 20px;
+  border-bottom-right-radius: 5px 20px;
+  padding: 0;
+  margin-left: 3px;
+  margin-right: 2px;
+  margin-bottom: 6px;
+  box-shadow: inset 0 1px 0 #828282bb, inset 0 -4px 20px #9c9c9c55, 0 2px 3px 0 #afafaf;
+}
+
+.calculator__visor {
+  height: 58px;
+  width: 208px;
+  position: absolute;
+  top: 78px;
+  right: 24px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.calculator__visor__number {
+  display: inline-block;
+  height: 58px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: transparent url("../../assets/images/ui_calc_sprite.png") no-repeat 0 0;
+}
+.calculator__visor__number--0 { background-position: 0 0; width: 24px; }
+.calculator__visor__number--1 { background-position: -34px 0; width: 12px; }
+.calculator__visor__number--2 { background-position: -56px 0; width: 25px; }
+.calculator__visor__number--3 { background-position: -91px 0;  width: 24px; }
+.calculator__visor__number--4 { background-position: -125px 0; width: 23px; }
+.calculator__visor__number--5 { background-position: -158px 0; width: 23px; }
+.calculator__visor__number--6 { background-position: -191px 0; width: 24px; }
+.calculator__visor__number--7 { background-position: -225px 0; width: 23px; }
+.calculator__visor__number--8 { background-position: -258px 0; width: 24px; }
+.calculator__visor__number--9 { background-position: -292px 0;  width: 24px; }
+.calculator__visor__number--separator { background-position: -326px 0; width: 7px; }
+.calculator__visor__number--dot { background-position: -344px 0; width: 9px; }
+.calculator__visor__number--minus { background-position: -363px 0; width: 16px; }
+
+.calculator__buttons__upper .calculator__button {
+  float: right;
+}
+.calculator__buttons__upper:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.calculator__button--operation {
+  font-size: 1.8em;
+}
+
+.calculator__button--red {
+  background-position: -53px -100px;
+}
+
+.calculator__button--short {
+  font-size: 0.9em;
+  height: 28px;
+  line-height: 30px;
+  background-position: -159px -100px;
+}
+
+.calculator__button--tall {
+  float: right;
+  height: 78px;
+  background-position: -106px -100px;
+}
+
+.calculator__button--ac {
+  background-position: -212px -100px;
+  width: 45px;
+  margin: 0 0 0 1px;
+}
+
+.debug {
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+  font-size: 14px;
+  height: 445px;  
+  overflow: auto;
+  text-align: left;
+}
+  .debug table {
+    width: 100%;
+  }
+  .debug tbody tr {
+    padding: 3px 0;
+    border-bottom: 1px solid #a5a5a5;
+    display: block;
+  }

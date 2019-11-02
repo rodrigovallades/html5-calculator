@@ -1,0 +1,9 @@
+.idea/
+.tmp/
+coverage/
+dist/
+docs/
+documentation/
+node_modules/
+public/
+reports/

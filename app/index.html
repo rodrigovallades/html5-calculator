@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rodrigo Vallades Magalhães [rodrigo.vallades@gmail.com] - Front-end challenge: Casio Calculator</title>
+  <link rel="stylesheet" href="assets/css/dependencies.min.css">
+  <link rel="stylesheet" href="assets/css/calculator.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+        <h1>Front-end challenge: Casio Calculator<br><small>Rodrigo Vallades Magalhães [<a href="mailto:rodrigo.vallades@gmail.com">rodrigo.vallades@gmail.com</a>]</small></h1>
+    </div>
+    <div class="alert alert-info alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Hey! Hope you like my solution.</strong>
+      <p>I focused on the visual aspect: you asked for a identical calculator, and you got it! I could have done this without using images, but only a CSS only solution would not be visually identical to the real calculator.</p>
+      <p>Some points I would like to make about best practices:</p>
+      <ul>        
+        <li>CSS is following BEM (block__element--modifier) pattern;</li>
+        <li>Even though I used images, all buttons and numbers are in ONE SPRITE;</li>
+        <li>The text inside the buttons is HTML;</li>
+        <li>I used only vanilla JavaScript. No jQuery here;</li>
+        <li>The build of this application was output by <strong>GULP</strong>. I only minified and concatenated the dependencies, but not the application code, so you can read it. You can build it yourself if you have <strong>NodeJS</strong> and <strong>npm</strong>:
+          <ul>
+            <li><strong>1. npm install</strong> (download dependencies);</li>
+            <li><strong>2. npm run calculator</strong> (build and auto-start browser with the calculator).</li>
+          </ul>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-8 col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-body">
+              <div class="calculator">
+                <div class="calculator__visor"></div>
+                <div class="calculator__buttons">
+                  <div class="calculator__buttons__upper">
+                    <button class="calculator__button calculator__button--short" data-action="off">OFF</button>
+                    <button class="calculator__button calculator__button--short" data-operation="square">√</button>
+                  </div>
+                  <button class="calculator__button">MC</button>
+                  <button class="calculator__button">MR</button>
+                  <button class="calculator__button">M-</button>
+                  <button class="calculator__button">M+</button>
+                  <button class="calculator__button calculator__button--operation" data-operation="divide">÷</button>
+                  <button class="calculator__button calculator__button--operation" data-operation="percentage">%</button>
+                  <button class="calculator__button" data-num="7">7</button>
+                  <button class="calculator__button" data-num="8">8</button>
+                  <button class="calculator__button" data-num="9">9</button>
+                  <button class="calculator__button calculator__button--operation" data-operation="multiply">×</button>
+                  <button class="calculator__button">+/-</button>
+                  <button class="calculator__button" data-num="4">4</button>
+                  <button class="calculator__button" data-num="5">5</button>
+                  <button class="calculator__button" data-num="6">6</button>
+                  <button class="calculator__button calculator__button--operation" data-operation="subtract">-</button>
+                  <button class="calculator__button calculator__button--red" data-action="c">C</button>
+                  <button class="calculator__button" data-num="1">1</button>
+                  <button class="calculator__button" data-num="2">2</button>
+                  <button class="calculator__button" data-num="3">3</button>
+                  <button class="calculator__button calculator__button--operation calculator__button--tall" data-operation="add">+</button>
+                  <button class="calculator__button calculator__button--ac" data-action="ac">AC</button>
+                  <button class="calculator__button" data-num="0">0</button>
+                  <button class="calculator__button" data-num=".">.</button>
+                  <button class="calculator__button calculator__button--operation" data-operation="result">=</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="well well-sm">
+            <div class="debug">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>[Events logged]</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/calculator.js"></script>
+</body>
+</html>

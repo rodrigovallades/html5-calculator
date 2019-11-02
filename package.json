@@ -1,0 +1,27 @@
+{
+  "name": "html5-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Rodrigo Vallades Magalhães",
+  "repository": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.12.3",
+    "jquery": "^1.10.2",
+    "bootstrap": "3.3.7",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.9",
+    "gulp-util": "3.0.8",
+    "gulp-watch": "4.3.11",
+    "gulp-webserver": "0.9.1",
+    "run-sequence": "2.2.0"
+  }
+}
