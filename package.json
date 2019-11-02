@@ -12,7 +12,7 @@
   "devDependencies": {
     "body-parser": "^1.12.3",
     "jquery": "^1.10.2",
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "gulp": "3.9.1",
     "gulp-concat": "2.6.1",
     "gulp-htmlmin": "3.0.0",
